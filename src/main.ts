@@ -233,7 +233,7 @@ async function main() {
   });
 
   const comments = await analyzeCode(filteredDiff, prDetails);
-  console.log(`FOUND COMMENTS ${comments}!`);
+  core.debug(`FOUND COMMENTS ${comments}!`);
   if (comments.length > 0) {
     await createReviewComment(
       prDetails.owner,
