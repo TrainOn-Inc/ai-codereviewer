@@ -220,7 +220,7 @@ async function main() {
   }
 
   const parsedDiff = parseDiff(diff);
-
+  console.log(parsedDiff)
   const excludePatterns = core
     .getInput("exclude")
     .split(",")
